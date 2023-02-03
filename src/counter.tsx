@@ -4,7 +4,7 @@ import { counterReducer } from "./counter-reducer";
 
 export function Counter(){
 
-    const [counterState, dispatch] = useReducer(counterReducer, {value:0});
+    const [counterState, dispatch] = useReducer(counterReducer, {value:1000});
 
     function handleAdd1(){
         dispatch({type:"ADD", payload:1})
